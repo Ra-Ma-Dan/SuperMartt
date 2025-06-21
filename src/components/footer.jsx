@@ -6,41 +6,41 @@ function Footer(){
                 <div className="flex justify-between items-center gap-8 flex-col">
                     <h1>Markett</h1>
                     <ul className="flex justify-center items-center gap-4">
-                        <li><i class='bx bxl-facebook-circle'></i></li>
-                        <li><i class='bx bxl-github'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-instagram-alt' ></i></li>
+                        <li><i className='bx bxl-facebook-circle'></i></li>
+                        <li><i className='bx bxl-github'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-instagram-alt' ></i></li>
                     </ul>
                 </div>
                 <div className="flex justify-between items-center gap-8 flex-col">
                     <h1>Markett</h1>
                     <ul className="flex justify-center items-center gap-4">
-                        <li><i class='bx bxl-facebook-circle'></i></li>
-                        <li><i class='bx bxl-github'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-instagram-alt' ></i></li>
+                        <li><i className='bx bxl-facebook-circle'></i></li>
+                        <li><i className='bx bxl-github'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-instagram-alt' ></i></li>
                     </ul>
                 </div>
                 <div className="flex justify-between items-center gap-8 flex-col">
                     <h1>Markett</h1>
                     <ul className="flex justify-center items-center gap-4">
-                        <li><i class='bx bxl-facebook-circle'></i></li>
-                        <li><i class='bx bxl-github'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-instagram-alt' ></i></li>
+                        <li><i className='bx bxl-facebook-circle'></i></li>
+                        <li><i className='bx bxl-github'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-instagram-alt' ></i></li>
                     </ul>
                 </div>
                 <div className="flex justify-between items-center gap-8 flex-col">
                     <h1>Markett</h1>
                     <ul className="flex justify-center items-center gap-4">
-                        <li><i class='bx bxl-facebook-circle'></i></li>
-                        <li><i class='bx bxl-github'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-youtube'></i></li>
-                        <li><i class='bx bxl-instagram-alt' ></i></li>
+                        <li><i className='bx bxl-facebook-circle'></i></li>
+                        <li><i className='bx bxl-github'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-youtube'></i></li>
+                        <li><i className='bx bxl-instagram-alt' ></i></li>
                     </ul>
                 </div>
             </div>

@@ -19,3 +19,11 @@ For the Customer Experience:
 "Enhance Your Beauty".
 "Stay Ahead of the Fashion Game".
 "Embrace innovation, empower your life
+
+
+🔁 API Extras You Can Try Later
+----Paginate: https://dummyjson.com/products?limit=10&skip=10
+
+----Search: https://dummyjson.com/products/search?q=phone
+
+----Filter by category: https://dummyjson.com/products/category/smartphones
