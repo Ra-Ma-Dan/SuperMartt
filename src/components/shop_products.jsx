@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 
-const ShopProducts = () => {
+const ShopProducts = ({ onAddToCart }) => {
     const [products, setProducts] = useState([])
     const [skip, setSkip] = useState(0)
     const limit = 32
@@ -52,7 +52,7 @@ const ShopProducts = () => {
                         <p className="font-sans text-black-50">{ product.description }</p>
                         <p className="font-sans text-black-50 text-center bg-gray-200 font-bold p-2">Price: ${ product.price }</p>
                         <button className="bg-gray-300 text-xl px-5 py-3 cursor-pointer hover:bg-black
-                        hover:text-white transition-all ease-linear delay-50">
+                        hover:text-white transition-all ease-linear delay-50" onClick={()=>{ onAddToCart(product) }}>
                         Add to cart
                         </button>
                     </Link>

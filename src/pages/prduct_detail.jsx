@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import axios from 'axios'
 
 
-function ProductDetails(){
+function ProductDetails({ onAddToCart }){
     const { id } = useParams()
     const [product, setProduct] = useState(null)
     const [loading, setLoading] = useState(false)
@@ -68,8 +68,8 @@ function ProductDetails(){
                             <i className='bx bxs-star hover:scale-105'></i>
                             <a href="#"> <span> (10) </span> Verivied ratings</a>
                         </div>
-                        <button className="bg-black text-white text-2xl py-2 px-7
-                        hover:bg-gray-700 cursor-pointer transition-all h-32 delay-30">Add to chart</button>
+                        <button className="bg-black text-white text-2xl py-2 px-7 hover:bg-gray-700 cursor-pointer
+                         transition-all h-32 delay-30" onClick={()=>{ onAddToCart(product) }}>Add to chart</button>
                     </div>
                 </div>
             </div>
