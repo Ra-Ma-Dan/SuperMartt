@@ -25,7 +25,7 @@ function Home(){
 
 
     return(
-        <main className='p-28'>
+        <main className='lg:p-28 p-10'>
             <div className="text-left px-10">
                 <h2 className="text-3xl font-bold font-sans capitalize" >Welcome to your happy place </h2>
                 <h4> where every click brings joy and every find feels like a little celebration! Let's make today awesome together</h4>
@@ -36,8 +36,8 @@ function Home(){
             <div className="p-10"> <StoreCarousel /> </div>
 
             <section>
-                <h1 className="bg-black text-white text-[4rem] text-center m-4 font-bold">Trending Products</h1>
-                <div className="grid grid-cols-3 gap-4 my-6">
+                <h1 className="bg-black text-white text-4xl lg:text-[4rem] text-center m-4 font-bold">Trending Products</h1>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 my-6">
                     <Trending />
                     <Trending />
                     <Trending />
@@ -45,7 +45,7 @@ function Home(){
             </section>
 
             <section>
-                <h1 className="bg-black text-white text-[4rem] text-center m-4 font-bold">New Products</h1>
+                <h1 className="bg-black text-white text-4xl lg:text-[4rem] text-center m-4 font-bold">New Products</h1>
                 <div className="">
                     <ProductCarosel />
                 </div>
@@ -53,7 +53,7 @@ function Home(){
 
             <section>
             {( !has_expired ? 
-            <h1 className="bg-black text-white text-[4rem] text-center m-4 font-bold">Products with Discount</h1> 
+            <h1 className="bg-black text-white lg:py-2 text-4xl lg:text-[4rem] text-center m-4 font-bold">Products with Discount</h1> 
             : 
             <h1 className="bg-black text-white text-[4rem] text-center m-4 font-bold">Product</h1>)}
                 <div className="grid grid-cols-3 gap-4 my-6">
@@ -64,14 +64,14 @@ function Home(){
             </section>
 
 
-            <section className="px-14 my-20">
+            <section className="lg:px-14 lg:my-20 px-1 py-5">
                 <WhyChooseUs />
             </section>
 
             <section>
                 <h1 className="text-black text-[4rem] text-center m-4 font-bold">FeedBacks</h1>
                 <p></p>
-                <div className="grid grid-cols-4 gap-4 my-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 my-6">
                     <Feedback />
                     <Feedback />
                     <Feedback />

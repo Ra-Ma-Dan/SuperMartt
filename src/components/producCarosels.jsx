@@ -1,6 +1,6 @@
 import { useState } from "react"
 import new_products from "../data/new_product";
-import NewPNewProductCard from "./new_products_card.jsx";
+import NewProductCard from "./new_products_card.jsx";
 
 
 
@@ -38,10 +38,10 @@ function ProductCarosel(){
         )}
 
         {/* Product Cards */}
-        <div className="flex w-full gap-4">
+        <div className="flex w-full gap-2 lg:gap-4">
           {visibleProducts.map((product) => (
-            <div key={product.id} className="w-1/4">
-              <NewPNewProductCard key={ product.id } product={ product }/>
+            <div key={product.id} className="w-1/2 lg:w-1/4">
+              <NewProductCard key={ product.id } product={ product }/>
             </div>
           ))}
         </div>

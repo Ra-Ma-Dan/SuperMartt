@@ -8,7 +8,7 @@ function Shop(){
     
     return (
         <>
-            <h1 className="bg-black text-white text-[4rem] text-center m-4 font-bold">
+            <h1 className="bg-black text-white text-3xl lg:text-[4rem] text-center m-4 font-bold">
             This is The Shop Page </h1>
 
             <div className="p-16">
@@ -17,7 +17,7 @@ function Shop(){
             <div>
                 <ShopProducts />
             </div>
-            
+             
         </>
     )
 }

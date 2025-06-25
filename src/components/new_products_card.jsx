@@ -8,12 +8,12 @@ function NewProductCard({ product }){
     <div>
       <img className="w-[80%] h-[200px] m-auto" src={product.image} alt={product.name} />
     </div>
-    <h2 className="font-sans font-bold text-3xl">{product.name}</h2>
-    <p className="font-sans text-black-50">
+    <h2 className="font-sans font-bold text-xl lg:text-3xl">{product.name}</h2>
+    <p className="hidden lg:block font-sans text-black-50">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatibus eaque. Dolores.
     </p>
     <p className="font-sans text-black-50">{product.price}</p>
-    <button className="bg-gray-300 text-xl px-2 py-3 cursor-pointer hover:bg-black hover:text-white transition-all ease-in delay-200">
+    <button className="bg-gray-300 text-xl px-1 lg:px-2 py-2 lg:py-3 cursor-pointer hover:bg-black hover:text-white transition-all ease-in delay-200">
       Add to cart
     </button>
   </div>

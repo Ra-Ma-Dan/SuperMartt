@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 
@@ -14,12 +15,12 @@ const Signup = () => {
                 <input className="h-16 px-3 outline-none border-2 rounded-xl" type="password" placeholder="Password" name="password" />
                 <input className="h-16 px-3 outline-none border-2 rounded-xl" type="password" placeholder="Password" name="password" />
             </div>
-            <a className="hover:text-gray-500" href="#">forget password</a>
             <button className="w-[100%] bg-white border-2 border-black text-xl font-mono py-6 
             hover:bg-black mt-2 hover:text-white font-bold transition-all ease-linear delay-75">
                 Login</button>
             <p className="text-center my-4">Already have an account? 
-                <a className="bg-gray-200 p-1 hover:bg-gray-400 transition-all ease-linear" href="#">Log in</a>
+                <Link to='/signin' className="bg-gray-200 p-1 hover:bg-gray-400 transition-all ease-linear">
+                Log in</Link>
             </p>
         </div>
         <div className="flex flex-col gap-3 border-2 py-4 px-6 min-w-72">

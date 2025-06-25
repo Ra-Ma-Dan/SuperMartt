@@ -2,8 +2,8 @@ import images from "../assets/images";
 
 
 
-function DiscountedProducts(){
-    return(
+function DiscountedProducts() {
+    return (
         <div className="text-center border-2 border-gray-200 rounded-3xl py-2 cursor-pointer hover:scale-[0.985] transition-all delay-200">
             <div><img className="w-[80%] m-auto" src={images.shoe_2} alt="" /></div>
             <h2 className="font-sans font-bold text-3xl">Cover Shoe</h2>
