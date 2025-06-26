@@ -1,7 +1,7 @@
 function Footer(){
 
     return (
-        <footer className="w-[100%] bg-gray py-3 px-10 bg-gray-200 border-gray-500 border-t-2 sticky left-0 bottom-0">
+        <footer className="w-[100%] bg-gray py-3 px-10 bg-gray-200 border-gray-500 border-t-2 z-10 sticky left-0 bottom-0">
             <div className="flex justify-between items-center">
                 <div className="flex justify-between items-center gap-8 flex-col">
                     <h1>Markett</h1>

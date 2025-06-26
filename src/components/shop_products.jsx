@@ -1,7 +1,5 @@
-import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useCart } from '../context/cart_context'
 import ShopProductCard from './shop_product_card'
 
 
@@ -16,12 +14,13 @@ const ShopProducts = () => {
         setLoading(true)
         const fetchProducts = async () =>{
             try{
-                const { data } = await axios.get(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
+                const data = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
                 //console.log(typeof(data))
                 //console.log(typeof(data.products));
-                const response = data.products
-                const all = data.total
-                setProducts(response)
+                if (!data.ok) throw new Error(`HTTP Error: status report: ${data.status}`)
+                const response = await data.json()
+                const all = response.total
+                setProducts(response.products)
                 setTotal(all)
                 setLoading(false)
             } catch(err){
