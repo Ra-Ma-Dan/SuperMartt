@@ -13,19 +13,20 @@ function ProductDetails(){
     useEffect(() => {
         setLoading(true)
         setError(null)
-        const fetch_product_info = () => {
-        try{
-            axios.get(`https://dummyjson.com/products/${id}`)
-            .then(res => {
-                setProduct(res.data)
+        const fetch_product_info = async() => {
+            try{
+                const res = await fetch(`https://dummyjson.com/products/${id}`)
+                if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`)
+                
+                const info = await res.json()
+                    setProduct(info)
+                    setLoading(false)
+                    //console.log(res.data)
+            } catch(err){
+                console.error(err)
+                setError("Fail to load details", err.message)
                 setLoading(false)
-                //console.log(res.data)
-            })
-        } catch(err){
-            console.error(err)
-            setError("Fail to load details")
-            setLoading(false)
-        }
+            }
         }
         fetch_product_info()
     }, [id])
