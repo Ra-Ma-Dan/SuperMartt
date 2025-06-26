@@ -85,5 +85,6 @@ supermartt/
 ********📄 License*************
 -This project is open source under the MIT License.
 
-********🌐 Live Preview (Coming Soon)*************
--A live version of SuperMartt will be available soon — stay tuned!
+********🌐 Live Preview *************
+-A live version of SuperMartt !
+preview at "https://supermartt.netlify.app/shop"
