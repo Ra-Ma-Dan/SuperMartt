@@ -87,4 +87,4 @@ supermartt/
 
 ********🌐 Live Preview *************
 -A live version of SuperMartt !
-preview at "https://supermartt.netlify.app/shop"
+preview at "https://supermartt.netlify.app/"
